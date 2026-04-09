@@ -1,14 +1,14 @@
 # tracearr-sdk
 
-Developer-friendly & type-safe Typescript SDK specifically catered to leverage *tracearr-sdk* API.
+Type-safe TypeScript SDK for the Tracearr public API.
 
 [![Built by Speakeasy](https://img.shields.io/badge/Built_by-SPEAKEASY-374151?style=for-the-badge&labelColor=f3f4f6)](https://www.speakeasy.com/?utm_source=tracearr-sdk&utm_campaign=typescript)
 [![License: MIT](https://img.shields.io/badge/LICENSE_//_MIT-3b5bdb?style=for-the-badge&labelColor=eff6ff)](https://opensource.org/licenses/MIT)
 
 
 <br /><br />
-> [!IMPORTANT]
-> This SDK is not yet ready for production use. To complete setup please follow the steps outlined in your [workspace](https://app.speakeasy.com/org/cactus-development/tracearr-sdk). Delete this section before > publishing to a package manager.
+> [!NOTE]
+> This repository is ready to use from GitHub now. Until it is published to npm, install it directly from this repository and pass your own Tracearr base URL when constructing the client.
 
 <!-- Start Summary [summary] -->
 ## Summary
@@ -60,34 +60,30 @@ Most endpoints support `serverId` to filter by media server.
 <!-- Start SDK Installation [installation] -->
 ## SDK Installation
 
-> [!TIP]
-> To finish publishing your SDK to npm and others you must [run your first generation action](https://www.speakeasy.com/docs/github-setup#step-by-step-guide).
-
-
-The SDK can be installed with either [npm](https://www.npmjs.com/), [pnpm](https://pnpm.io/), [bun](https://bun.sh/) or [yarn](https://classic.yarnpkg.com/en/) package managers.
+The SDK is not published to npm yet. Install it directly from GitHub with your preferred package manager:
 
 ### NPM
 
 ```bash
-npm add <UNSET>
+npm add github:toluLikesToCode/tracearr-sdk
 ```
 
 ### PNPM
 
 ```bash
-pnpm add <UNSET>
+pnpm add github:toluLikesToCode/tracearr-sdk
 ```
 
 ### Bun
 
 ```bash
-bun add <UNSET>
+bun add github:toluLikesToCode/tracearr-sdk
 ```
 
 ### Yarn
 
 ```bash
-yarn add <UNSET>
+yarn add github:toluLikesToCode/tracearr-sdk
 ```
 
 > [!NOTE]
@@ -110,6 +106,7 @@ For supported JavaScript runtimes, please consult [RUNTIMES.md](RUNTIMES.md).
 import { TracearrSDK } from "tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -140,6 +137,7 @@ To authenticate with the API the `bearerAuth` parameter must be set when initial
 import { TracearrSDK } from "tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -354,7 +352,7 @@ The default server can be overridden globally by passing a URL to the `serverURL
 import { TracearrSDK } from "tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: "https://tracearr.jactus.net",
+  serverURL: "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 

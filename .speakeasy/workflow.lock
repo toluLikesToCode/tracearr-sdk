@@ -2,8 +2,8 @@ speakeasyVersion: 1.761.1
 sources:
     Tracearr Public API:
         sourceNamespace: tracearr-public-api
-        sourceRevisionDigest: sha256:8e0255cd47233d77906a717fb37088bb34253c3ab09730edeb18b5c17bec29ba
-        sourceBlobDigest: sha256:959bc2a64b0d0aa8be10581d3e20105661da022998bf6e14a9c6e53342b0f0ce
+        sourceRevisionDigest: sha256:9ebfef89d4746d67466697d3f743cb9e901f29edfe0a75fbb5f0a3810f9891f5
+        sourceBlobDigest: sha256:a8f6dc572817bbdd35b3672e78cdd4f05c3d7ddbb03c3390206b3385b0f363a8
         tags:
             - latest
             - 1.0.0
@@ -11,10 +11,10 @@ targets:
     tracearr-sdk:
         source: Tracearr Public API
         sourceNamespace: tracearr-public-api
-        sourceRevisionDigest: sha256:8e0255cd47233d77906a717fb37088bb34253c3ab09730edeb18b5c17bec29ba
-        sourceBlobDigest: sha256:959bc2a64b0d0aa8be10581d3e20105661da022998bf6e14a9c6e53342b0f0ce
+        sourceRevisionDigest: sha256:9ebfef89d4746d67466697d3f743cb9e901f29edfe0a75fbb5f0a3810f9891f5
+        sourceBlobDigest: sha256:a8f6dc572817bbdd35b3672e78cdd4f05c3d7ddbb03c3390206b3385b0f363a8
         codeSamplesNamespace: tracearr-public-api-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:93277095c990db9b84a340ab5cf792d00b8f3186b23c1942ca98f40bdd77d8a7
+        codeSamplesRevisionDigest: sha256:49ee322bbca5e63cb10cad1c3e105ff1e0addfa8516ff50af71ff096204ffc70
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest

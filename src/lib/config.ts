@@ -11,7 +11,7 @@ import { Params, pathToFunc } from "./url.js";
  * Contains the list of servers available to the SDK
  */
 export const ServerList = [
-  "https://tracearr.jactus.net",
+  "https://your-tracearr.example.com",
 ] as const;
 
 export type SDKOptions = {
@@ -58,7 +58,7 @@ export function serverURLFromOptions(options: SDKOptions): URL | null {
 export const SDK_METADATA = {
   language: "typescript",
   openapiDocVersion: "1.0.0",
-  sdkVersion: "0.0.1",
+  sdkVersion: "0.0.2",
   genVersion: "2.879.6",
-  userAgent: "speakeasy-sdk/typescript 0.0.1 2.879.6 1.0.0 tracearr-sdk",
+  userAgent: "speakeasy-sdk/typescript 0.0.2 2.879.6 1.0.0 tracearr-sdk",
 } as const;

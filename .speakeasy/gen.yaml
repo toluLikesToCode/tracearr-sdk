@@ -34,16 +34,30 @@ generation:
     generateNewTests: true
     skipResponseBodyAssertions: false
 typescript:
-  version: 0.0.1
+  version: 0.0.2
   acceptHeaderEnum: false
   additionalDependencies:
     dependencies: {}
     devDependencies: {}
     peerDependencies: {}
-  additionalPackageJSON: {}
-  additionalScripts: {}
+  additionalPackageJSON:
+    bugs:
+      url: https://github.com/toluLikesToCode/tracearr-sdk/issues
+    description: TypeScript SDK for the Tracearr public API.
+    homepage: https://github.com/toluLikesToCode/tracearr-sdk#readme
+    keywords:
+      - tracearr
+      - sdk
+      - typescript
+      - api-client
+    license: MIT
+    repository:
+      type: git
+      url: git+https://github.com/toluLikesToCode/tracearr-sdk.git
+  additionalScripts:
+    refresh:spec: bash ./scripts/refresh-spec.sh
   alwaysIncludeInboundAndOutbound: false
-  author: Speakeasy
+  author: Tolu Adegbehingbe
   baseErrorName: TracearrSDKError
   clientServerStatusCodesAsErrors: true
   constFieldsAlwaysOptional: false

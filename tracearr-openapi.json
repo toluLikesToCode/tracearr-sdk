@@ -2258,7 +2258,7 @@
   },
   "servers": [
     {
-      "url": "https://tracearr.jactus.net"
+      "url": "https://your-tracearr.example.com"
     }
   ]
 }

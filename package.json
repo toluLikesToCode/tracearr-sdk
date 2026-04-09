@@ -1,7 +1,23 @@
 {
   "name": "tracearr-sdk",
-  "version": "0.0.1",
-  "author": "Speakeasy",
+  "version": "0.0.2",
+  "author": "Tolu Adegbehingbe",
+  "bugs": {
+    "url": "https://github.com/toluLikesToCode/tracearr-sdk/issues"
+  },
+  "description": "TypeScript SDK for the Tracearr public API.",
+  "homepage": "https://github.com/toluLikesToCode/tracearr-sdk#readme",
+  "keywords": [
+    "tracearr",
+    "sdk",
+    "typescript",
+    "api-client"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toluLikesToCode/tracearr-sdk.git"
+  },
   "type": "module",
   "main": "./esm/index.js",
   "exports": {

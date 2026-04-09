@@ -12,6 +12,8 @@ if [[ -z "${TRACEARR_TOKEN:-}" ]]; then
   exit 1
 fi
 
+TRACEARR_SERVER_URL="${TRACEARR_SERVER_URL:-https://your-tracearr.example.com}"
+
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 SPEC_PATH="$ROOT_DIR/tracearr-openapi.json"
 TMP_SPEC="$(mktemp)"
@@ -27,7 +29,7 @@ curl -fsSL \
   "$TRACEARR_BASE_URL/api/v1/public/docs" > "$TMP_SPEC"
 
 jq \
-  --arg server_url "$TRACEARR_BASE_URL" \
+  --arg server_url "$TRACEARR_SERVER_URL" \
   '
     .servers = [{"url": $server_url}] |
     (.paths |= with_entries(

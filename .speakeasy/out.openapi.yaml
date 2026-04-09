@@ -1665,4 +1665,4 @@ paths:
         "401":
           description: "Invalid or missing API key"
 servers:
-  - url: "https://tracearr.jactus.net"
+  - url: "https://your-tracearr.example.com"
