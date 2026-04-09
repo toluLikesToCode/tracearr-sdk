@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { StreamVideoDecision } from "@tolulikestocode/tracearr-sdk/models";
+import { StreamVideoDecision } from "@cactus-labs/tracearr-sdk/models";
 
 let value: StreamVideoDecision = "copy";
 

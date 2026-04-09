@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { Period } from "@tolulikestocode/tracearr-sdk/models";
+import { Period } from "@cactus-labs/tracearr-sdk/models";
 
 let value: Period = "month";
 

@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { Concurrent } from "@tolulikestocode/tracearr-sdk/models";
+import { Concurrent } from "@cactus-labs/tracearr-sdk/models";
 
 let value: Concurrent = {
   date: "2026-02-08 00:00:00",

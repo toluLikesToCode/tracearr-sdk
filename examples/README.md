@@ -1,7 +1,6 @@
-# @tolulikestocode/tracearr-sdk Examples
+# @cactus-labs/tracearr-sdk Examples
 
-This directory contains example scripts demonstrating how to use the
-`@tolulikestocode/tracearr-sdk` package against a real Tracearr instance.
+This directory contains example scripts demonstrating how to use the @cactus-labs/tracearr-sdk SDK.
 
 ## Prerequisites
 
@@ -15,19 +14,18 @@ This directory contains example scripts demonstrating how to use the
    cp .env.template .env
    ```
 
-2. Edit `.env` and set:
-   - `TRACEARR_BASE_URL=https://your-tracearr.example.com`
-   - `TRACEARRSDK_BEARER_AUTH=trr_pub_...`
+2. Edit `.env` and add your actual credentials (API keys, tokens, etc.)
 
 ## Running the Examples
 
 To run an example file from the examples directory:
 
 ```bash
-npm run build && npx tsx publicAPIGetAPIV1PublicHealth.example.ts
+npm run build && npx tsx example.ts
 ```
 
 ## Creating new examples
 
 Duplicate an existing example file, they won't be overwritten by the generation process.
+
 

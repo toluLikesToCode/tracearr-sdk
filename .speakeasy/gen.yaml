@@ -34,7 +34,7 @@ generation:
     generateNewTests: true
     skipResponseBodyAssertions: false
 typescript:
-  version: 0.0.3
+  version: 0.0.4
   acceptHeaderEnum: false
   additionalDependencies:
     dependencies: {}
@@ -109,7 +109,7 @@ typescript:
   moduleFormat: esm
   multipartArrayFormat: standard
   outputModelSuffix: output
-  packageName: '@tolulikestocode/tracearr-sdk'
+  packageName: '@cactus-labs/tracearr-sdk'
   preApplyUnionDiscriminators: true
   preserveModelFieldNames: false
   responseFormat: flat

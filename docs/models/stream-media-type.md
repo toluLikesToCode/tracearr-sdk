@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { StreamMediaType } from "@tolulikestocode/tracearr-sdk/models";
+import { StreamMediaType } from "@cactus-labs/tracearr-sdk/models";
 
 let value: StreamMediaType = "track";
 

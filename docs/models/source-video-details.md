@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { SourceVideoDetails } from "@tolulikestocode/tracearr-sdk/models";
+import { SourceVideoDetails } from "@cactus-labs/tracearr-sdk/models";
 
 let value: SourceVideoDetails = {
   framerate: "23.976",

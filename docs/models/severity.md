@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { Severity } from "@tolulikestocode/tracearr-sdk/models";
+import { Severity } from "@cactus-labs/tracearr-sdk/models";
 
 let value: Severity = "high";
 

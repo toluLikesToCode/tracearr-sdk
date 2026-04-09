@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { Type } from "@tolulikestocode/tracearr-sdk/models";
+import { Type } from "@cactus-labs/tracearr-sdk/models";
 
 let value: Type = "plex";
 

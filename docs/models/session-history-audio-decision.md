@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { SessionHistoryAudioDecision } from "@tolulikestocode/tracearr-sdk/models";
+import { SessionHistoryAudioDecision } from "@cactus-labs/tracearr-sdk/models";
 
 let value: SessionHistoryAudioDecision = "transcode";
 

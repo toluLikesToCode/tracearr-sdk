@@ -1,7 +1,7 @@
 # Maintainers
 
 This repository is generated with Speakeasy and published as the npm package
-`@tolulikestocode/tracearr-sdk`.
+`@cactus-labs/tracearr-sdk`.
 
 ## Required GitHub Secrets
 
@@ -62,7 +62,7 @@ git push origin --tags
 ```
 
 4. Create a GitHub Release from that tag.
-5. The `Publish npm Package` workflow will publish `@tolulikestocode/tracearr-sdk`.
+5. The `Publish npm Package` workflow will publish `@cactus-labs/tracearr-sdk`.
 
 The publish workflow rejects releases whose tag does not match the version in
 `package.json`.

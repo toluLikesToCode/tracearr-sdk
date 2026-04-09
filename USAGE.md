@@ -1,6 +1,6 @@
 <!-- Start SDK Example Usage [usage] -->
 ```typescript
-import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
+import { TracearrSDK } from "@cactus-labs/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
   serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",

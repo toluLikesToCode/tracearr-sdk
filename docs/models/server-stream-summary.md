@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { ServerStreamSummary } from "@tolulikestocode/tracearr-sdk/models";
+import { ServerStreamSummary } from "@cactus-labs/tracearr-sdk/models";
 
 let value: ServerStreamSummary = {
   serverId: "6947a5e0-288f-4007-bb85-15a667520c29",

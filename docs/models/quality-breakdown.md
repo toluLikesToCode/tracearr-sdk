@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { QualityBreakdown } from "@tolulikestocode/tracearr-sdk/models";
+import { QualityBreakdown } from "@cactus-labs/tracearr-sdk/models";
 
 let value: QualityBreakdown = {
   directPlay: 234,

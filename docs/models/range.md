@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { Range } from "@tolulikestocode/tracearr-sdk/models";
+import { Range } from "@cactus-labs/tracearr-sdk/models";
 
 let value: Range = {
   start: new Date("2026-02-08T05:00:00.000Z"),

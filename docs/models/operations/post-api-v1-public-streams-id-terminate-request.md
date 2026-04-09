@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { PostApiV1PublicStreamsIdTerminateRequest } from "@tolulikestocode/tracearr-sdk/models/operations";
+import { PostApiV1PublicStreamsIdTerminateRequest } from "@cactus-labs/tracearr-sdk/models/operations";
 
 let value: PostApiV1PublicStreamsIdTerminateRequest = {
   id: "ae228876-26c8-4d22-9205-759098ca0e4c",

@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { Stream } from "@tolulikestocode/tracearr-sdk/models";
+import { Stream } from "@cactus-labs/tracearr-sdk/models";
 
 let value: Stream = {
   id: "cdec8252-8ecb-4627-8e94-15d1f2d8f7de",

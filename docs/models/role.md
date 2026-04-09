@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { Role } from "@tolulikestocode/tracearr-sdk/models";
+import { Role } from "@cactus-labs/tracearr-sdk/models";
 
 let value: Role = "admin";
 

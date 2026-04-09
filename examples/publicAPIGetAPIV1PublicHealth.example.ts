@@ -5,13 +5,13 @@
 import dotenv from "dotenv";
 dotenv.config();
 /**
- * Example usage of the @tolulikestocode/tracearr-sdk SDK
+ * Example usage of the @cactus-labs/tracearr-sdk SDK
  *
  * To run this example from the examples directory:
  * npm run build && npx tsx publicAPIGetAPIV1PublicHealth.example.ts
  */
 
-import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
+import { TracearrSDK } from "@cactus-labs/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
   serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",

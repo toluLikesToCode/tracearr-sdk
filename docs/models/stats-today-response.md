@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { StatsTodayResponse } from "@tolulikestocode/tracearr-sdk/models";
+import { StatsTodayResponse } from "@cactus-labs/tracearr-sdk/models";
 
 let value: StatsTodayResponse = {
   activeStreams: 5,

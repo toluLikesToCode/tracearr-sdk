@@ -19,8 +19,8 @@ specific category of applications.
 ## Example
 
 ```typescript
-import { TracearrSDKCore } from "@tolulikestocode/tracearr-sdk/core.js";
-import { publicAPIGetAPIV1PublicHealth } from "@tolulikestocode/tracearr-sdk/funcs/public-api-get-apiv1-public-health.js";
+import { TracearrSDKCore } from "@cactus-labs/tracearr-sdk/core.js";
+import { publicAPIGetAPIV1PublicHealth } from "@cactus-labs/tracearr-sdk/funcs/public-api-get-apiv1-public-health.js";
 
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -65,8 +65,8 @@ render useful content under all states (loading, success, error and so on).
 The general pattern when calling standalone functions looks like this:
 
 ```typescript
-import { TracearrSDKCore } from "@tolulikestocode/tracearr-sdk/core.js";
-import { publicAPIGetAPIV1PublicHealth } from "@tolulikestocode/tracearr-sdk/funcs/public-api-get-apiv1-public-health.js";
+import { TracearrSDKCore } from "@cactus-labs/tracearr-sdk/core.js";
+import { publicAPIGetAPIV1PublicHealth } from "@cactus-labs/tracearr-sdk/funcs/public-api-get-apiv1-public-health.js";
 
 const client = new TracearrSDKCore({
   serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",

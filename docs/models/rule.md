@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { Rule } from "@tolulikestocode/tracearr-sdk/models";
+import { Rule } from "@cactus-labs/tracearr-sdk/models";
 
 let value: Rule = {
   id: "6449074a-1675-4139-9362-089744b571a3",
