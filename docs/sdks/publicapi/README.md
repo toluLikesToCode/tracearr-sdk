@@ -2,9 +2,6 @@
 
 ## Overview
 
-All examples below pass `serverURL` explicitly. Replace
-`TRACEARR_BASE_URL` with the URL of your own Tracearr instance.
-
 ### Available Operations
 
 * [getApiV1PublicHealth](#getapiv1publichealth) - Check server connectivity
@@ -28,7 +25,6 @@ Returns connection status for all configured media servers.
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -52,7 +48,6 @@ import { publicAPIGetAPIV1PublicHealth } from "@tolulikestocode/tracearr-sdk/fun
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -98,7 +93,6 @@ Aggregate counts for dashboard display. Optionally filter by server.
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -124,7 +118,6 @@ import { publicAPIGetAPIV1PublicStats } from "@tolulikestocode/tracearr-sdk/func
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -173,7 +166,6 @@ Dashboard metrics for "today" in the specified timezone. Includes active streams
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -200,7 +192,6 @@ import { publicAPIGetAPIV1PublicStatsToday } from "@tolulikestocode/tracearr-sdk
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -250,7 +241,6 @@ Consolidated activity data across six dimensions: plays over time, concurrent st
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -277,7 +267,6 @@ import { publicAPIGetAPIV1PublicActivity } from "@tolulikestocode/tracearr-sdk/f
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -327,7 +316,6 @@ Real-time active streams with codec and quality details. Use summary=true for li
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -354,7 +342,6 @@ import { publicAPIGetAPIV1PublicStreams } from "@tolulikestocode/tracearr-sdk/fu
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -404,7 +391,6 @@ Stop an active playback session. Optionally display a message to the user (suppo
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -430,7 +416,6 @@ import { publicAPIPostAPIV1PublicStreamsIdTerminate } from "@tolulikestocode/tra
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -480,7 +465,6 @@ Paginated users with session counts and trust scores. Users with accounts on mul
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -506,7 +490,6 @@ import { publicAPIGetAPIV1PublicUsers } from "@tolulikestocode/tracearr-sdk/func
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -555,7 +538,6 @@ Paginated violations in descending order. Filter by server, severity, or acknowl
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -581,7 +563,6 @@ import { publicAPIGetAPIV1PublicViolations } from "@tolulikestocode/tracearr-sdk
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -630,7 +611,6 @@ Paginated session history grouped by unique plays. Multiple pause/resume cycles 
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -657,7 +637,6 @@ import { publicAPIGetAPIV1PublicHistory } from "@tolulikestocode/tracearr-sdk/fu
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 

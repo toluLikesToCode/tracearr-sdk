@@ -3,7 +3,6 @@
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 

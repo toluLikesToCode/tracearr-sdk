@@ -25,7 +25,6 @@ import { publicAPIGetAPIV1PublicHealth } from "@tolulikestocode/tracearr-sdk/fun
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -65,16 +64,13 @@ render useful content under all states (loading, success, error and so on).
 The general pattern when calling standalone functions looks like this:
 
 ```typescript
-import { TracearrSDKCore } from "@tolulikestocode/tracearr-sdk/core.js";
-import { publicAPIGetAPIV1PublicHealth } from "@tolulikestocode/tracearr-sdk/funcs/public-api-get-apiv1-public-health.js";
+import { Core } from "<sdk-package-name>";
+import { fetchSomething } from "<sdk-package-name>/funcs/fetchSomething.js";
 
-const client = new TracearrSDKCore({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
-  bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
-});
+const client = new Core();
 
 async function run() {
-  const result = await publicAPIGetAPIV1PublicHealth(client);
+  const result = await fetchSomething(client, { id: "123" });
   if (!result.ok) {
     // You can throw the error or handle it. It's your choice now.
     throw result.error;

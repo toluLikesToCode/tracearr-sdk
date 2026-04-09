@@ -1,6 +1,6 @@
 {
   "name": "@tolulikestocode/tracearr-sdk",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Tolu Adegbehingbe",
   "bugs": {
     "url": "https://github.com/toluLikesToCode/tracearr-sdk/issues"
@@ -76,6 +76,10 @@
     }
   },
   "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toluLikesToCode/tracearr-sdk.git"
+  },
   "scripts": {
     "lint": "oxlint --max-warnings=0 --deny-warnings 'src/**/*.{ts,tsx}'",
     "build": "tsgo",

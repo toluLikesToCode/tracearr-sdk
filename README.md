@@ -37,7 +37,7 @@ Most endpoints support `serverId` to filter by media server.
 <!-- Start Table of Contents [toc] -->
 ## Table of Contents
 <!-- $toc-max-depth=2 -->
-* [tracearr-sdk](#tracearr-sdk)
+* [Tracearr SDK](#tracearr-sdk)
   * [Authentication](#authentication)
   * [Filtering](#filtering)
   * [SDK Installation](#sdk-installation)
@@ -60,38 +60,34 @@ Most endpoints support `serverId` to filter by media server.
 <!-- Start SDK Installation [installation] -->
 ## SDK Installation
 
-The package name is `@tolulikestocode/tracearr-sdk`.
+> [!TIP]
+> To finish publishing your SDK to npm and others you must [run your first generation action](https://www.speakeasy.com/docs/github-setup#step-by-step-guide).
 
-Until the first npm release is published, install directly from GitHub:
+
+The SDK can be installed with either [npm](https://www.npmjs.com/), [pnpm](https://pnpm.io/), [bun](https://bun.sh/) or [yarn](https://classic.yarnpkg.com/en/) package managers.
 
 ### NPM
 
 ```bash
-npm add github:toluLikesToCode/tracearr-sdk
+npm add https://github.com/toluLikesToCode/tracearr-sdk
 ```
 
 ### PNPM
 
 ```bash
-pnpm add github:toluLikesToCode/tracearr-sdk
+pnpm add https://github.com/toluLikesToCode/tracearr-sdk
 ```
 
 ### Bun
 
 ```bash
-bun add github:toluLikesToCode/tracearr-sdk
+bun add https://github.com/toluLikesToCode/tracearr-sdk
 ```
 
 ### Yarn
 
 ```bash
-yarn add github:toluLikesToCode/tracearr-sdk
-```
-
-After npm publishing is live, switch to the package registry source:
-
-```bash
-npm add @tolulikestocode/tracearr-sdk
+yarn add https://github.com/toluLikesToCode/tracearr-sdk
 ```
 
 > [!NOTE]
@@ -114,7 +110,6 @@ For supported JavaScript runtimes, please consult [RUNTIMES.md](RUNTIMES.md).
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -145,7 +140,6 @@ To authenticate with the API the `bearerAuth` parameter must be set when initial
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -219,7 +213,6 @@ To change the default retry strategy for a single API call, simply provide a ret
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -249,7 +242,6 @@ If you'd like to override the default retry strategy for all operations that sup
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   retryConfig: {
     strategy: "backoff",
     backoff: {
@@ -294,7 +286,6 @@ import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 import * as errors from "@tolulikestocode/tracearr-sdk/models/errors";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -363,7 +354,7 @@ The default server can be overridden globally by passing a URL to the `serverURL
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
+  serverURL: "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -427,10 +418,7 @@ httpClient.addHook("requestError", (error, request) => {
   console.groupEnd();
 });
 
-const sdk = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
-  httpClient: httpClient,
-});
+const sdk = new TracearrSDK({ httpClient: httpClient });
 ```
 <!-- End Custom HTTP Client [http-client] -->
 
@@ -447,10 +435,7 @@ You can pass a logger that matches `console`'s interface as an SDK option.
 ```typescript
 import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
-const sdk = new TracearrSDK({
-  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
-  debugLogger: console,
-});
+const sdk = new TracearrSDK({ debugLogger: console });
 ```
 
 You can also enable a default debug logger by setting an environment variable `TRACEARRSDK_DEBUG` to true.

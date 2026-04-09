@@ -14,7 +14,7 @@ targets:
         sourceRevisionDigest: sha256:9ebfef89d4746d67466697d3f743cb9e901f29edfe0a75fbb5f0a3810f9891f5
         sourceBlobDigest: sha256:a8f6dc572817bbdd35b3672e78cdd4f05c3d7ddbb03c3390206b3385b0f363a8
         codeSamplesNamespace: tracearr-public-api-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:c5b0ea2fe6d087853e153115b5e323eb5e43a68d99a58c9e40211352b48246f5
+        codeSamplesRevisionDigest: sha256:22bc614678090e6f2a9cf704b008a58c8693e381978eac5b3af475325cd12f3a
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest

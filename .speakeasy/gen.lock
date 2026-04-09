@@ -5,12 +5,14 @@ management:
   docVersion: 1.0.0
   speakeasyVersion: 1.761.1
   generationVersion: 2.879.6
-  releaseVersion: 0.0.3
-  configChecksum: 061ac6a9571b8fb8c2e1466447e3f171
+  releaseVersion: 0.0.4
+  configChecksum: 80563a36d538bfe51e40dde492f63446
+  repoURL: https://github.com/toluLikesToCode/tracearr-sdk.git
+  installationURL: https://github.com/toluLikesToCode/tracearr-sdk
 persistentEdits:
-  generation_id: e4e36e7b-441d-4699-824e-0580505b96ff
-  pristine_commit_hash: ce83264894a0df3da084e82e9ffda28c2feeb855
-  pristine_tree_hash: 4d0d050efd39fb3259a9e7b9d7aec8e10c4ed57d
+  generation_id: 84d9cf86-3173-43d6-b426-956158aa670e
+  pristine_commit_hash: 8e0a9056ca9ef8e64032ce67232968610a96d8f6
+  pristine_tree_hash: 18e7379e35bdf4d7dc63ac0e3d8d5da900d1047f
 features:
   typescript:
     additionalDependencies: 0.1.0
@@ -33,8 +35,8 @@ features:
 trackedFiles:
   .devcontainer/README.md:
     id: b170c0f184ac
-    last_write_checksum: sha1:b6564d2a7c8ae764fff6d1b4666dcd787210a000
-    pristine_git_object: cdef18c30e383534a868742e1b9148f2670606f9
+    last_write_checksum: sha1:8cb23842eee196f1e4a4ea15574b37e247a8f8a3
+    pristine_git_object: 82b76fb430d8b84c4253ba12cf9a75bfacdd7168
   .devcontainer/devcontainer.json:
     id: b34062a34eb1
     last_write_checksum: sha1:d0b15193202c961e7d1875864ddb15f9d17c84dd
@@ -349,12 +351,12 @@ trackedFiles:
     pristine_git_object: 55218b3b14b4ad53cf84eecea9af6688cedaffda
   jsr.json:
     id: 7f6ab7767282
-    last_write_checksum: sha1:42d9a8a890bb27df38ac782d5558c07a8127854c
-    pristine_git_object: 8e1dfac3a5b74ecf58d83372765dd544388e07ce
+    last_write_checksum: sha1:140a6c3dd49fb49a2671ae1b88c22d910e212bbe
+    pristine_git_object: b038912c44a2dd92dadf9ffc9095f7daf7aeb845
   package.json:
     id: 7030d0b2f71b
-    last_write_checksum: sha1:6515f392904c8e95f9701261af59493234f9143e
-    pristine_git_object: 11a665815f44f9163ad08542c6f444777c1b1fee
+    last_write_checksum: sha1:c33c7b69c43282441f60bd097220b7e01153cbcf
+    pristine_git_object: e551bc1e5521a1b5151049152000ea612c442af3
   src/core.ts:
     id: f431fdbcd144
     last_write_checksum: sha1:3444fa1aaddae10b96cbb221c57097197ad495f9
@@ -417,8 +419,8 @@ trackedFiles:
     pristine_git_object: 44be0eae8246521b230e8e711a88eff738fc015d
   src/lib/config.ts:
     id: 320761608fb3
-    last_write_checksum: sha1:d97090fa8ced582d7b75d18fdfee81b3acdd94b8
-    pristine_git_object: 2d4feacedc5ac50572a9f40b090002a42eb4be0d
+    last_write_checksum: sha1:49d6497eae3614896e3f43bc95240173ec4516a1
+    pristine_git_object: 278e498d158bb2854d60cb690650012ca7d4c858
   src/lib/dlv.ts:
     id: b1988214835a
     last_write_checksum: sha1:1dd3e3fbb4550c4bf31f5ef997faff355d6f3250
