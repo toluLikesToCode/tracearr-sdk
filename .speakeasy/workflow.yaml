@@ -1,0 +1,19 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Tracearr Public API:
+        inputs:
+            - location: ./tracearr-openapi.json
+        output: .speakeasy/out.openapi.yaml
+        registry:
+            location: registry.speakeasyapi.dev/cactus-development/tracearr-sdk/tracearr-public-api
+targets:
+    tracearr-sdk:
+        target: typescript
+        source: Tracearr Public API
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/cactus-development/tracearr-sdk/tracearr-public-api-typescript-code-samples
+            labelOverride:
+                fixedValue: Typescript (SDK)
+            blocking: false

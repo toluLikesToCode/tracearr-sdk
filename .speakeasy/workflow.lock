@@ -1,0 +1,37 @@
+speakeasyVersion: 1.761.1
+sources:
+    Tracearr Public API:
+        sourceNamespace: tracearr-public-api
+        sourceRevisionDigest: sha256:8e0255cd47233d77906a717fb37088bb34253c3ab09730edeb18b5c17bec29ba
+        sourceBlobDigest: sha256:959bc2a64b0d0aa8be10581d3e20105661da022998bf6e14a9c6e53342b0f0ce
+        tags:
+            - latest
+            - 1.0.0
+targets:
+    tracearr-sdk:
+        source: Tracearr Public API
+        sourceNamespace: tracearr-public-api
+        sourceRevisionDigest: sha256:8e0255cd47233d77906a717fb37088bb34253c3ab09730edeb18b5c17bec29ba
+        sourceBlobDigest: sha256:959bc2a64b0d0aa8be10581d3e20105661da022998bf6e14a9c6e53342b0f0ce
+        codeSamplesNamespace: tracearr-public-api-typescript-code-samples
+        codeSamplesRevisionDigest: sha256:93277095c990db9b84a340ab5cf792d00b8f3186b23c1942ca98f40bdd77d8a7
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Tracearr Public API:
+            inputs:
+                - location: ./tracearr-openapi.json
+            output: .speakeasy/out.openapi.yaml
+            registry:
+                location: registry.speakeasyapi.dev/cactus-development/tracearr-sdk/tracearr-public-api
+    targets:
+        tracearr-sdk:
+            target: typescript
+            source: Tracearr Public API
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/cactus-development/tracearr-sdk/tracearr-public-api-typescript-code-samples
+                labelOverride:
+                    fixedValue: Typescript (SDK)
+                blocking: false

@@ -1,0 +1,25 @@
+# GetApiV1PublicHistoryRequest
+
+## Example Usage
+
+```typescript
+import { GetApiV1PublicHistoryRequest } from "tracearr-sdk/models/operations";
+
+let value: GetApiV1PublicHistoryRequest = {
+  serverId: "550e8400-e29b-41d4-a716-446655440000",
+  timezone: "America/New_York",
+};
+```
+
+## Fields
+
+| Field                                                                                         | Type                                                                                          | Required                                                                                      | Description                                                                                   | Example                                                                                       |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `page`                                                                                        | *number*                                                                                      | :heavy_minus_sign:                                                                            | N/A                                                                                           | 1                                                                                             |
+| `pageSize`                                                                                    | *number*                                                                                      | :heavy_minus_sign:                                                                            | N/A                                                                                           | 25                                                                                            |
+| `serverId`                                                                                    | *string*                                                                                      | :heavy_minus_sign:                                                                            | Filter by server                                                                              | 550e8400-e29b-41d4-a716-446655440000                                                          |
+| `state`                                                                                       | [operations.State](../../models/operations/state.md)                                          | :heavy_minus_sign:                                                                            | N/A                                                                                           |                                                                                               |
+| `mediaType`                                                                                   | [operations.MediaType](../../models/operations/media-type.md)                                 | :heavy_minus_sign:                                                                            | N/A                                                                                           |                                                                                               |
+| `startDate`                                                                                   | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_minus_sign:                                                                            | Sessions on or after this date (start of day in timezone)                                     |                                                                                               |
+| `endDate`                                                                                     | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_minus_sign:                                                                            | Sessions on or before this date (end of day in timezone)                                      |                                                                                               |
+| `timezone`                                                                                    | *string*                                                                                      | :heavy_minus_sign:                                                                            | IANA timezone for date interpretation                                                         | America/New_York                                                                              |
