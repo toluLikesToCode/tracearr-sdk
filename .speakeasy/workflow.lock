@@ -14,7 +14,7 @@ targets:
         sourceRevisionDigest: sha256:9ebfef89d4746d67466697d3f743cb9e901f29edfe0a75fbb5f0a3810f9891f5
         sourceBlobDigest: sha256:a8f6dc572817bbdd35b3672e78cdd4f05c3d7ddbb03c3390206b3385b0f363a8
         codeSamplesNamespace: tracearr-public-api-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:49ee322bbca5e63cb10cad1c3e105ff1e0addfa8516ff50af71ff096204ffc70
+        codeSamplesRevisionDigest: sha256:c5b0ea2fe6d087853e153115b5e323eb5e43a68d99a58c9e40211352b48246f5
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
@@ -33,5 +33,5 @@ workflow:
                 registry:
                     location: registry.speakeasyapi.dev/cactus-development/tracearr-sdk/tracearr-public-api-typescript-code-samples
                 labelOverride:
-                    fixedValue: Typescript (SDK)
+                    fixedValue: TypeScript (SDK)
                 blocking: false

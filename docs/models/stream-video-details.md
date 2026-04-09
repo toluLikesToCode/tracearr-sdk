@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { StreamVideoDetails } from "tracearr-sdk/models";
+import { StreamVideoDetails } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: StreamVideoDetails = {
   width: 1920,

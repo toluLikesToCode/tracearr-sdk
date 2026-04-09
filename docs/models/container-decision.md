@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { ContainerDecision } from "tracearr-sdk/models";
+import { ContainerDecision } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: ContainerDecision = "directplay";
 

@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { SessionHistoryUser } from "tracearr-sdk/models";
+import { SessionHistoryUser } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: SessionHistoryUser = {
   id: "ca13d5d5-3e4f-449b-af56-5528ee7fed8b",

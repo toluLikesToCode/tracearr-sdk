@@ -2,6 +2,9 @@
 
 ## Overview
 
+All examples below pass `serverURL` explicitly. Replace
+`TRACEARR_BASE_URL` with the URL of your own Tracearr instance.
+
 ### Available Operations
 
 * [getApiV1PublicHealth](#getapiv1publichealth) - Check server connectivity
@@ -22,9 +25,10 @@ Returns connection status for all configured media servers.
 
 <!-- UsageSnippet language="typescript" operationID="get_/api/v1/public/health" method="get" path="/api/v1/public/health" -->
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -42,12 +46,13 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { TracearrSDKCore } from "tracearr-sdk/core.js";
-import { publicAPIGetAPIV1PublicHealth } from "tracearr-sdk/funcs/public-api-get-apiv1-public-health.js";
+import { TracearrSDKCore } from "@tolulikestocode/tracearr-sdk/core.js";
+import { publicAPIGetAPIV1PublicHealth } from "@tolulikestocode/tracearr-sdk/funcs/public-api-get-apiv1-public-health.js";
 
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -90,9 +95,10 @@ Aggregate counts for dashboard display. Optionally filter by server.
 
 <!-- UsageSnippet language="typescript" operationID="get_/api/v1/public/stats" method="get" path="/api/v1/public/stats" -->
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -112,12 +118,13 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { TracearrSDKCore } from "tracearr-sdk/core.js";
-import { publicAPIGetAPIV1PublicStats } from "tracearr-sdk/funcs/public-api-get-apiv1-public-stats.js";
+import { TracearrSDKCore } from "@tolulikestocode/tracearr-sdk/core.js";
+import { publicAPIGetAPIV1PublicStats } from "@tolulikestocode/tracearr-sdk/funcs/public-api-get-apiv1-public-stats.js";
 
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -163,9 +170,10 @@ Dashboard metrics for "today" in the specified timezone. Includes active streams
 
 <!-- UsageSnippet language="typescript" operationID="get_/api/v1/public/stats/today" method="get" path="/api/v1/public/stats/today" -->
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -186,12 +194,13 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { TracearrSDKCore } from "tracearr-sdk/core.js";
-import { publicAPIGetAPIV1PublicStatsToday } from "tracearr-sdk/funcs/public-api-get-apiv1-public-stats-today.js";
+import { TracearrSDKCore } from "@tolulikestocode/tracearr-sdk/core.js";
+import { publicAPIGetAPIV1PublicStatsToday } from "@tolulikestocode/tracearr-sdk/funcs/public-api-get-apiv1-public-stats-today.js";
 
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -238,9 +247,10 @@ Consolidated activity data across six dimensions: plays over time, concurrent st
 
 <!-- UsageSnippet language="typescript" operationID="get_/api/v1/public/activity" method="get" path="/api/v1/public/activity" -->
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -261,12 +271,13 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { TracearrSDKCore } from "tracearr-sdk/core.js";
-import { publicAPIGetAPIV1PublicActivity } from "tracearr-sdk/funcs/public-api-get-apiv1-public-activity.js";
+import { TracearrSDKCore } from "@tolulikestocode/tracearr-sdk/core.js";
+import { publicAPIGetAPIV1PublicActivity } from "@tolulikestocode/tracearr-sdk/funcs/public-api-get-apiv1-public-activity.js";
 
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -313,9 +324,10 @@ Real-time active streams with codec and quality details. Use summary=true for li
 
 <!-- UsageSnippet language="typescript" operationID="get_/api/v1/public/streams" method="get" path="/api/v1/public/streams" -->
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -336,12 +348,13 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { TracearrSDKCore } from "tracearr-sdk/core.js";
-import { publicAPIGetAPIV1PublicStreams } from "tracearr-sdk/funcs/public-api-get-apiv1-public-streams.js";
+import { TracearrSDKCore } from "@tolulikestocode/tracearr-sdk/core.js";
+import { publicAPIGetAPIV1PublicStreams } from "@tolulikestocode/tracearr-sdk/funcs/public-api-get-apiv1-public-streams.js";
 
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -388,9 +401,10 @@ Stop an active playback session. Optionally display a message to the user (suppo
 
 <!-- UsageSnippet language="typescript" operationID="post_/api/v1/public/streams/{id}/terminate" method="post" path="/api/v1/public/streams/{id}/terminate" -->
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -410,12 +424,13 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { TracearrSDKCore } from "tracearr-sdk/core.js";
-import { publicAPIPostAPIV1PublicStreamsIdTerminate } from "tracearr-sdk/funcs/public-api-post-apiv1-public-streams-id-terminate.js";
+import { TracearrSDKCore } from "@tolulikestocode/tracearr-sdk/core.js";
+import { publicAPIPostAPIV1PublicStreamsIdTerminate } from "@tolulikestocode/tracearr-sdk/funcs/public-api-post-apiv1-public-streams-id-terminate.js";
 
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -462,9 +477,10 @@ Paginated users with session counts and trust scores. Users with accounts on mul
 
 <!-- UsageSnippet language="typescript" operationID="get_/api/v1/public/users" method="get" path="/api/v1/public/users" -->
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -484,12 +500,13 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { TracearrSDKCore } from "tracearr-sdk/core.js";
-import { publicAPIGetAPIV1PublicUsers } from "tracearr-sdk/funcs/public-api-get-apiv1-public-users.js";
+import { TracearrSDKCore } from "@tolulikestocode/tracearr-sdk/core.js";
+import { publicAPIGetAPIV1PublicUsers } from "@tolulikestocode/tracearr-sdk/funcs/public-api-get-apiv1-public-users.js";
 
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -535,9 +552,10 @@ Paginated violations in descending order. Filter by server, severity, or acknowl
 
 <!-- UsageSnippet language="typescript" operationID="get_/api/v1/public/violations" method="get" path="/api/v1/public/violations" -->
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -557,12 +575,13 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { TracearrSDKCore } from "tracearr-sdk/core.js";
-import { publicAPIGetAPIV1PublicViolations } from "tracearr-sdk/funcs/public-api-get-apiv1-public-violations.js";
+import { TracearrSDKCore } from "@tolulikestocode/tracearr-sdk/core.js";
+import { publicAPIGetAPIV1PublicViolations } from "@tolulikestocode/tracearr-sdk/funcs/public-api-get-apiv1-public-violations.js";
 
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -608,9 +627,10 @@ Paginated session history grouped by unique plays. Multiple pause/resume cycles 
 
 <!-- UsageSnippet language="typescript" operationID="get_/api/v1/public/history" method="get" path="/api/v1/public/history" -->
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -631,12 +651,13 @@ run();
 The standalone function version of this method:
 
 ```typescript
-import { TracearrSDKCore } from "tracearr-sdk/core.js";
-import { publicAPIGetAPIV1PublicHistory } from "tracearr-sdk/funcs/public-api-get-apiv1-public-history.js";
+import { TracearrSDKCore } from "@tolulikestocode/tracearr-sdk/core.js";
+import { publicAPIGetAPIV1PublicHistory } from "@tolulikestocode/tracearr-sdk/funcs/public-api-get-apiv1-public-history.js";
 
 // Use `TracearrSDKCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const tracearrSDK = new TracearrSDKCore({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 

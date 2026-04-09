@@ -15,5 +15,5 @@ targets:
             registry:
                 location: registry.speakeasyapi.dev/cactus-development/tracearr-sdk/tracearr-public-api-typescript-code-samples
             labelOverride:
-                fixedValue: Typescript (SDK)
+                fixedValue: TypeScript (SDK)
             blocking: false

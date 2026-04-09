@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { SourceAudioDetails } from "tracearr-sdk/models";
+import { SourceAudioDetails } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: SourceAudioDetails = {
   channelLayout: "7.1",

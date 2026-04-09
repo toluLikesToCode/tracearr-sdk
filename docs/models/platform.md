@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { Platform } from "tracearr-sdk/models";
+import { Platform } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: Platform = {
   platform: "Chrome",

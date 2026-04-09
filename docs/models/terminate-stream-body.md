@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { TerminateStreamBody } from "tracearr-sdk/models";
+import { TerminateStreamBody } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: TerminateStreamBody = {};
 ```

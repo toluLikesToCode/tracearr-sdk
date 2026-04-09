@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { Violation } from "tracearr-sdk/models";
+import { Violation } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: Violation = {
   id: "2127b3f8-5631-4a7d-b27f-45f5b36b25d6",

@@ -1,5 +1,5 @@
 {
-  "name": "tracearr-sdk-examples",
+  "name": "@tolulikestocode/tracearr-sdk-examples",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,6 @@
     "tsx": "^4.19.2"
   },
   "dependencies": {
-    "tracearr-sdk": "file:.."
+    "@tolulikestocode/tracearr-sdk": "file:.."
   }
 }

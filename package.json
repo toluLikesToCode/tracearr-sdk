@@ -1,11 +1,24 @@
 {
-  "name": "tracearr-sdk",
-  "version": "0.0.2",
+  "name": "@tolulikestocode/tracearr-sdk",
+  "version": "0.0.3",
   "author": "Tolu Adegbehingbe",
   "bugs": {
     "url": "https://github.com/toluLikesToCode/tracearr-sdk/issues"
   },
   "description": "TypeScript SDK for the Tracearr public API.",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "esm/**/*",
+    "src/**/*",
+    "FUNCTIONS.md",
+    "LICENSE",
+    "README.md",
+    "RUNTIMES.md",
+    "USAGE.md",
+    "jsr.json"
+  ],
   "homepage": "https://github.com/toluLikesToCode/tracearr-sdk#readme",
   "keywords": [
     "tracearr",
@@ -14,6 +27,10 @@
     "api-client"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/toluLikesToCode/tracearr-sdk.git"
@@ -62,8 +79,8 @@
   "scripts": {
     "lint": "oxlint --max-warnings=0 --deny-warnings 'src/**/*.{ts,tsx}'",
     "build": "tsgo",
-    "refresh:spec": "bash ./scripts/refresh-spec.sh",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "refresh:spec": "bash ./scripts/refresh-spec.sh"
   },
   "peerDependencies": {
     

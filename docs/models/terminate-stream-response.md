@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { TerminateStreamResponse } from "tracearr-sdk/models";
+import { TerminateStreamResponse } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: TerminateStreamResponse = {
   success: true,

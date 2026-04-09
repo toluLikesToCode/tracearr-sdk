@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { GetApiV1PublicStatsTodayRequest } from "tracearr-sdk/models/operations";
+import { GetApiV1PublicStatsTodayRequest } from "@tolulikestocode/tracearr-sdk/models/operations";
 
 let value: GetApiV1PublicStatsTodayRequest = {
   serverId: "550e8400-e29b-41d4-a716-446655440000",

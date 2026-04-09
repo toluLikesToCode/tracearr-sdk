@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { Play } from "tracearr-sdk/models";
+import { Play } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: Play = {
   date: "2026-02-08 00:00:00",

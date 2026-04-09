@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { SubtitleInfo } from "tracearr-sdk/models";
+import { SubtitleInfo } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: SubtitleInfo = {
   decision: "burn",

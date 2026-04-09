@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { TranscodeInfo } from "tracearr-sdk/models";
+import { TranscodeInfo } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: TranscodeInfo = {
   sourceContainer: "mkv",

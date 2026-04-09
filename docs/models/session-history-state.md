@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { SessionHistoryState } from "tracearr-sdk/models";
+import { SessionHistoryState } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: SessionHistoryState = "paused";
 

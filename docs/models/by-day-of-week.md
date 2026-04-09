@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { ByDayOfWeek } from "tracearr-sdk/models";
+import { ByDayOfWeek } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: ByDayOfWeek = {
   day: 5,

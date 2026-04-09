@@ -1,4 +1,4 @@
-# tracearr-sdk
+# Tracearr SDK
 
 Type-safe TypeScript SDK for the Tracearr public API.
 
@@ -8,7 +8,7 @@ Type-safe TypeScript SDK for the Tracearr public API.
 
 <br /><br />
 > [!NOTE]
-> This repository is ready to use from GitHub now. Until it is published to npm, install it directly from this repository and pass your own Tracearr base URL when constructing the client.
+> This repository is ready to consume from GitHub now as `@tolulikestocode/tracearr-sdk`. Until the first npm release exists, install from GitHub and always pass your own Tracearr base URL when constructing the client.
 
 <!-- Start Summary [summary] -->
 ## Summary
@@ -60,7 +60,9 @@ Most endpoints support `serverId` to filter by media server.
 <!-- Start SDK Installation [installation] -->
 ## SDK Installation
 
-The SDK is not published to npm yet. Install it directly from GitHub with your preferred package manager:
+The package name is `@tolulikestocode/tracearr-sdk`.
+
+Until the first npm release is published, install directly from GitHub:
 
 ### NPM
 
@@ -86,6 +88,12 @@ bun add github:toluLikesToCode/tracearr-sdk
 yarn add github:toluLikesToCode/tracearr-sdk
 ```
 
+After npm publishing is live, switch to the package registry source:
+
+```bash
+npm add @tolulikestocode/tracearr-sdk
+```
+
 > [!NOTE]
 > This package is published as an ES Module (ESM) only. For applications using
 > CommonJS, use `await import()` to import and use this package.
@@ -103,7 +111,7 @@ For supported JavaScript runtimes, please consult [RUNTIMES.md](RUNTIMES.md).
 ### Example
 
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
   serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
@@ -134,7 +142,7 @@ This SDK supports the following security scheme globally:
 
 To authenticate with the API the `bearerAuth` parameter must be set when initializing the SDK client instance. For example:
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
   serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
@@ -208,9 +216,10 @@ Some of the endpoints in this SDK support retries.  If you use the SDK without a
 
 To change the default retry strategy for a single API call, simply provide a retryConfig object to the call:
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -237,9 +246,10 @@ run();
 
 If you'd like to override the default retry strategy for all operations that support retries, you can provide a retryConfig at SDK initialization:
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   retryConfig: {
     strategy: "backoff",
     backoff: {
@@ -280,10 +290,11 @@ run();
 
 ### Example
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
-import * as errors from "tracearr-sdk/models/errors";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
+import * as errors from "@tolulikestocode/tracearr-sdk/models/errors";
 
 const tracearrSDK = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -349,10 +360,10 @@ run();
 
 The default server can be overridden globally by passing a URL to the `serverURL: string` optional parameter when initializing the SDK client instance. For example:
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
 const tracearrSDK = new TracearrSDK({
-  serverURL: "https://your-tracearr.example.com",
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
   bearerAuth: process.env["TRACEARRSDK_BEARER_AUTH"] ?? "",
 });
 
@@ -386,9 +397,9 @@ The following example shows how to:
 - use the `"requestError"` hook to log errors
 
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 import { ProxyAgent } from "undici";
-import { HTTPClient } from "tracearr-sdk/lib/http";
+import { HTTPClient } from "@tolulikestocode/tracearr-sdk/lib/http";
 
 const dispatcher = new ProxyAgent("http://proxy.example.com:8080");
 
@@ -416,7 +427,10 @@ httpClient.addHook("requestError", (error, request) => {
   console.groupEnd();
 });
 
-const sdk = new TracearrSDK({ httpClient: httpClient });
+const sdk = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
+  httpClient: httpClient,
+});
 ```
 <!-- End Custom HTTP Client [http-client] -->
 
@@ -431,9 +445,12 @@ You can pass a logger that matches `console`'s interface as an SDK option.
 > Beware that debug logging will reveal secrets, like API tokens in headers, in log messages printed to a console or files. It's recommended to use this feature only during local development and not in production.
 
 ```typescript
-import { TracearrSDK } from "tracearr-sdk";
+import { TracearrSDK } from "@tolulikestocode/tracearr-sdk";
 
-const sdk = new TracearrSDK({ debugLogger: console });
+const sdk = new TracearrSDK({
+  serverURL: process.env["TRACEARR_BASE_URL"] ?? "https://your-tracearr.example.com",
+  debugLogger: console,
+});
 ```
 
 You can also enable a default debug logger by setting an environment variable `TRACEARRSDK_DEBUG` to true.

@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { ByHourOfDay } from "tracearr-sdk/models";
+import { ByHourOfDay } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: ByHourOfDay = {
   hour: 20,

@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { StreamState } from "tracearr-sdk/models";
+import { StreamState } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: StreamState = "paused";
 

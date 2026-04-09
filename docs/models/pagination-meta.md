@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { PaginationMeta } from "tracearr-sdk/models";
+import { PaginationMeta } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: PaginationMeta = {
   total: 42,

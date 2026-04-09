@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { ServerStatus } from "tracearr-sdk/models";
+import { ServerStatus } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: ServerStatus = {
   id: "d6afd92b-4757-463d-85d5-b81d79c31466",

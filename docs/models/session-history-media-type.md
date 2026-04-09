@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { SessionHistoryMediaType } from "tracearr-sdk/models";
+import { SessionHistoryMediaType } from "@tolulikestocode/tracearr-sdk/models";
 
 let value: SessionHistoryMediaType = "photo";
 

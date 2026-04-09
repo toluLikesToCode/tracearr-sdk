@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { TerminateStreamErrorResponse } from "tracearr-sdk/models/errors";
+import { TerminateStreamErrorResponse } from "@tolulikestocode/tracearr-sdk/models/errors";
 
 // No examples available for this model
 ```

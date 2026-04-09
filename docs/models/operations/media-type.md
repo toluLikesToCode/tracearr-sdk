@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { MediaType } from "tracearr-sdk/models/operations";
+import { MediaType } from "@tolulikestocode/tracearr-sdk/models/operations";
 
 let value: MediaType = "photo";
 ```
